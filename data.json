@@ -1,0 +1,34 @@
+[
+
+	{
+
+		"_id" : "101",
+		"title" : "My First blog post",
+		"blogBody" : "This is just a start",
+		"numberOfComments" : "20",
+		"creationDate" : "May 20, 2012"
+
+	},
+
+	{
+
+		"_id" : "102",
+		"title" : "My Second blog",
+		"blogBody" : "Wow i have written 2 blogs now",
+		"numberOfComments" : "35",
+		"creationDate" : "June 25, 2012"
+
+	},
+
+	{
+
+		"_id" : "103",
+		"title" : "I am a writer now",
+		"blogBody" : "Three blogs!!! I am a writer now",
+		"numberOfComments" : "40",
+		"creationDate" : "July 1, 2012"
+
+	}
+
+
+]
