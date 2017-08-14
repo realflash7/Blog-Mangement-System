@@ -1,0 +1,56 @@
+<head>
+<title>BLOG MANAGEMENT SYS</title>
+<style>
+div.main_head{
+	color:black;
+	text-align:center;
+	background-color:lightgrey;
+	font-family:verdana;
+	border-collapse: true;
+}
+div.logins{
+	
+	text-align:left;
+
+	font-family:verdana;
+}
+div.refer{
+	color:white;
+	text-align:left;
+	text-align:center;
+	font-family:verdana;
+}
+</style>
+</head>
+<body>
+</br>
+<form action='http://localhost:8888/'>
+<button type='submit'>HOME</button>
+</form>
+</br>
+<div class="main_head">
+</br>
+	<%= title%>
+</br>
+</br>
+</div>
+<div class="logins">
+<h4 style =color:red>AUTHOR: <%= post.author %></h4>
+	<h5 style=color:green> SUBTITLE -: <%= post.subtitle %></h5>
+	<h5 style=text-align:center>  <%= post.blogBody %></h5>
+	<h5 style=color:green> NUMBER OF COMMENTS: <%= post.numberOfComments %></h5>
+	<h5 style=color:green> COMMENTS </h5>
+	<% for(var i=0; i<post.numberOfComments; i++){%>	
+	<h5 style=font-family:batang;> <%= post.comments[i] %></h5>
+	<% } %>
+	<h5 style=color:green> POSTED ON         : <%= post.creationDate %></h5>
+
+	
+	 <h5 style=color:blue>COMMENT---</h5>
+
+<form action="/blogs/comment/<%= post.id %>" method="post">
+<input type="text" name ="comm">
+</form>
+
+</div>
+</body>

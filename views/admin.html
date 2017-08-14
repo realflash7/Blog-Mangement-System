@@ -1,0 +1,65 @@
+<head>
+<title>ADMIN</title>
+<style>
+div.heading {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+div.boody{
+	background-color:red;
+	width:300px;
+    float:right;
+    padding:60px; 
+}
+div.exp{
+   
+    color:green;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+div.main_head{
+	color:red;
+	text-align:center;
+	background-color:black;
+	font-family:verdana;
+}
+</style>
+</head>
+
+<body>
+
+<div class="main_head">
+</br>
+<h1 >BLOG MANAGEMENT SYSTEM</h1>
+</br>
+</div>
+<div class="heading">
+<h2>ADMINISTRATOR PAGE</h2>
+</div>
+
+<div class="boody">
+<form action="/blogs/adduser" method="post" >
+<h4>USERNAME</h4>
+<input type ='text' name='username'>
+</br>
+
+
+<h4>PASSWORD</h4>
+<input type ='password' name='password'>
+</br>
+<h4>CONFIRM PASSWORD</h4>
+<input type ='password' name='cpassword'>
+</br>
+</br>
+<button type='submit'>ADD USER-></button>
+</form>
+</div>
+<div class="exp">
+<h4> PROVIDE USERNAME AND PASSWORD</h4>
+</div>
+
+</body>
+

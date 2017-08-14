@@ -1,0 +1,19 @@
+<title>new blog</title>
+<form action='http://localhost:8888/'>
+<button type='submit'>HOME</button>
+</form>
+<h1 style=color:red;>NEW BLOG</h1>
+</br>
+<hr>
+<h1><%= u %></h1>
+
+<form action="/blogs/create/blog/<%= u %>" method="post">
+<h3>Title</h3>
+<input type="text" name ="title">
+<h3>Subtitle</h3>
+<input type="text" name ="subtitle">
+<h3>Blog</h3>
+<textarea name="blogBody", cols="40", rows="5"></textarea>
+</br>
+<button type"post" >submit</button>
+</form>

@@ -1,0 +1,49 @@
+<head>
+<title>ADMIN LOGIN</title>
+<style>
+div.heading {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+div.boody{
+	background-color:orange;
+	color:black;
+	width:350px;
+    float:left;
+    padding:60px; 
+}
+div.main_head{
+	color:red;
+	text-align:center;
+	background-color:black;
+	font-family:verdana;
+}
+</style>
+</head>
+<form action='http://localhost:8888/'>
+<button type='submit'>HOME</button>
+</form>
+<body>
+<div class="main_head">
+</br>
+<h1 >BLOG MANAGEMENT SYSTEM</h1>
+
+<div class="heading">
+<h2>ADMINISTRATOR LOGIN</h2>
+</div>
+
+<div class="boody">
+<form action="/blogs/admin">
+
+<button type='submit'>ADD USER</button>
+</form>
+<form action="/blogs/userlogin">
+
+<button type='submit'>DELETE USER</button>
+</br>
+(login user and close the account)
+</form>
+</div>
+</body>

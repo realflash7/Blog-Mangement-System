@@ -1,0 +1,57 @@
+<head>
+<title>
+<%= u %>
+</title>
+<style>
+div.main_head{
+	color:black;
+		background-color:lightgrey;
+		text-align: center;
+	font-family:verdana;
+	border-collapse: true;
+}
+div.logins{
+	
+	text-align:left;
+
+	font-family:verdana;
+}
+div.logout{
+	
+	text-align:right;
+
+	font-family:cooper;
+}
+div.refer{
+	color:white;
+	text-align:left;
+	text-align:center;
+	font-family:verdana;
+}
+</style>
+</head>
+<div class="main_head">
+
+<h2><%= u %></h2>
+
+</div>
+<div class="logout">
+<a href="/blogs/userlogin">logout</a>
+</br>
+<form action ='/blogs/delete_user/<%= u %>' method='post'>
+<button type='submit'>close this account</button>
+</form>
+</div>
+<form action ="/blogs/create/<%= u %>" >
+<button type='submit'>add blog</button>
+</form>
+<ul>
+
+<% for(var i=0; i<title.length; i++){   %>
+	<a href="/blogs/mera_blog/<%= title[i].id%>" ><%= title[i].title %></a>
+<h5 style=color:green><%= title[i].subtitle %></h5>
+<a href="/blogs/editblogg/<%= title[i].id %>">edit blog</a>
+
+</br></br></br>
+<% } %>
+</ul>

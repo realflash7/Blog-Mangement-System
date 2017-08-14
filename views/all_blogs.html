@@ -1,0 +1,46 @@
+<head>
+<title>all blogs</title>
+<style>
+div.main_head{
+	color:orange;
+	text-align:center;
+	background-color:black;
+	font-family:verdana;
+	border-collapse: true;
+}
+div.logins{
+	color:green;
+	text-align:right;
+
+	font-family:verdana;
+}
+div.refer{
+	color:white;
+	text-align:left;
+	text-align:center;
+	font-family:verdana;
+}
+</style>
+</head>
+<form action='http://localhost:8888/'>
+<button type='submit'>HOME</button>
+</form>
+<div class="main_head">
+<h1>BLOG MANAGEMENT SYSTEM</h1>
+<h4>ALL BLOGS</h4>
+</div>
+
+<ul>
+<% for(var i=0; i<title.length; i++){%>
+<h5 ><%= title[i].author %></h5>
+	<a href="/blogs/ind_blog/<%= title[i].id%>" ><%= title[i].title %></a>
+<h5 style=color:green><%= title[i].subtitle %></h5>
+<h5 style=color:green><%= title[i].creationDate %></h5>
+</br></br></br>
+<% } %>
+</ul>
+
+
+
+
+

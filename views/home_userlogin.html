@@ -1,0 +1,50 @@
+<head>
+<title>USER LOGIN</title>
+<style>
+div.heading {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+div.boody{
+	background-color:orange;
+	color:black;
+	width:350px;
+    float:left;
+    padding:60px; 
+}
+div.main_head{
+	color:red;
+	text-align:center;
+	background-color:black;
+	font-family:verdana;
+}
+</style>
+</head>
+<body>
+
+<form action='http://localhost:8888/'>
+<button type='submit'>HOME</button>
+</form>
+<div class="main_head">
+</br>
+<h1 >BLOG MANAGEMENT SYSTEM</h1>
+
+<div class="heading">
+<h2>USER LOGIN</h2>
+</div>
+
+<div class="boody">
+<form action="/blogs/userss" method="post">
+<h4>USERNAME</h4>
+<input type ='text' name='username'>
+</br>
+<h4>PASSWORD</h4>
+<input type ='password' name='password'>
+</br>
+</br>
+<button type='submit'>LOGIN</button>
+</form>
+</div>
+</body>
